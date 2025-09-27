@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ setPage, isMenuOpen, setIsMenuOpen }) =
           <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="block text-center py-2 text-gray-700 hover:bg-gray-100">Sobre</a>
           <a href="#contato" onClick={() => setIsMenuOpen(false)} className="block text-center py-2 text-gray-700 hover:bg-gray-100">Contato</a>
           <div className="px-6 mt-4 justify-center flex">
-             <Button onClick={() => setPage("login")} children="Acesso Fornecedor" icon={faLock} />
+            <Button onClick={() => setPage("login")} icon={faLock}>Acesso Fornecedor</Button>
           </div>
         </div>
       )}
