@@ -28,7 +28,7 @@ const LoginPage = ({ setPage }: LoginPageProps) => {
                         Voltar à Página Inicial
                     </button> */}
                     <div className='mt-5'>
-                        <ButtonSecondary onClick={() => setPage("home")} children="Voltar à Página Inicial" icon={faHome} />
+                        <ButtonSecondary onClick={() => setPage("home")} icon={faHome}>Voltar à Página Inicial</ButtonSecondary>
                     </div>
 
                 </div>

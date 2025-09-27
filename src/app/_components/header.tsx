@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ setPage, isMenuOpen, setIsMenuOpen }) =
           <a href="#sobre" className={navLinks}>Sobre</a>
           <a href="#contato" className={navLinks}>Contato</a>
           
-          <Button onClick={() => setPage("login")} children="Acesso Fornecedor" icon={faLock} />
+          <Button onClick={() => setPage("login")} icon={faLock}>Acesso Fornecedor</Button>
 
         </nav>
 
