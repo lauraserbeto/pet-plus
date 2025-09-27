@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import logo2Branco from '../../../public/logo2-branco.png'
 import Image from 'next/image';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import ButtonSecondary from '../../../public/ui/ButtonSecondary/buttonSecondary';
 
 export interface LoginPageProps {
   setPage: (page: string) => void;
 }
 
 const LoginPage = ({ setPage }: LoginPageProps) => {
-    const [authMode, setAuthMode] = useState('login'); // 'login' ou 'register'
-    const [userType, setUserType] = useState('fornecedor'); // 'fornecedor' ou 'prestador'
+    const [authMode, setAuthMode] = useState('login'); 
+    const [userType, setUserType] = useState('fornecedor'); 
     
     const inputClasses = "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F58B05]";
     const labelClasses = "block text-sm font-medium text-gray-600 mb-1";
@@ -22,13 +24,16 @@ const LoginPage = ({ setPage }: LoginPageProps) => {
                     </div>
                     <h2 className="text-2xl font-semibold mt-6">Área de Parceiros</h2>
                     <p className="mt-2">Gerencie seus serviços, agendamentos e produtos em um só lugar. Impulsione seu negócio e conecte-se com mais tutores.</p>
-                    <button onClick={() => setPage('home')} className="mt-8 border-2 border-white text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:text-[#3699D2] transition-all duration-300">
+                    {/* <button onClick={() => setPage('home')} className="mt-8 border-2 border-white text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:text-[#3699D2] transition-all duration-300">
                         Voltar à Página Inicial
-                    </button>
+                    </button> */}
+                    <div className='mt-5'>
+                        <ButtonSecondary onClick={() => setPage("home")} children="Voltar à Página Inicial" icon={faHome} />
+                    </div>
+
                 </div>
                 
                 <div className="w-full md:w-1/2 p-8 md:p-12">
-                    {/* --- Seleção do tipo de usuário --- */}
                     <div className="flex justify-center mb-6">
                         <button onClick={() => setUserType('fornecedor')} className={`w-1/2 py-2 font-semibold rounded-l-lg transition-colors duration-300 ${userType === 'fornecedor' ? 'bg-[#3699D2] text-white' : 'bg-gray-200 text-gray-700'}`}>
                             Fornecedor (Loja)
@@ -74,7 +79,6 @@ const LoginPage = ({ setPage }: LoginPageProps) => {
                         </div>
                     )}
 
-                    {/* --- Formulário de Cadastro Condicional --- */}
                     {authMode === 'register' && (
                         <div className="animate-fade-in">
                              <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">

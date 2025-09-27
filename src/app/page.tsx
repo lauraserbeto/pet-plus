@@ -6,10 +6,9 @@ import Header from './_components/header';
 import Footer from './_components/footer';
 
 
-// --- Componente Principal da Aplicação ---
 export default function App() {
-    const [page, setPage] = useState('home'); // Controla qual página é exibida: 'home' ou 'login'
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // Controla o menu mobile
+    const [page, setPage] = useState('home'); 
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
     const renderPage = () => {
         switch (page) {
