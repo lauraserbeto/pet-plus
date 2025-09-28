@@ -87,7 +87,7 @@ const HomePage = ({ setPage }: HomePageProps) => {
                 </div>
             </section>
 
-            {/* Seção Download App */}
+            {/* Seção Download */}
             <section id="download-app" className="bg-[#C4E9F2] bg-opacity-30 py-20">
                 <div className="container mx-auto px-6">
                     <div className="md:flex items-center">
