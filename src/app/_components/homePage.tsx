@@ -70,20 +70,19 @@ const HomePage = ({ setPage }: HomePageProps) => {
                     </p>
                 </div>
                 
-                <div className="container mx-auto px-4 md:px-10">
-                    <Carousel opts={{ align: "start", loop: true }} className="w-full">
-                        <CarouselContent className="-ml-4">
+                <div className="container mx-auto px-6 ">
+                    <Carousel opts={{ align: "start", loop: true }} className="w-full max-w-6xl mx-auto">
+                        <CarouselContent className="-ml-2">
                             {testimonials.map((testimonial) => (
-                                // AJUSTE 6: Definido 'basis-full' para garantir 1 card por vez em telas pequenas
-                                <CarouselItem key={testimonial.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                                <CarouselItem key={testimonial.id} className="pl-2 basis-full sm:basis-1/2 lg:basis-1/3">
                                     <div className="p-1 h-full">
                                         <RatingCard {...testimonial} />
                                     </div>
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className="hidden sm:flex" />
-                        <CarouselNext className="hidden sm:flex" />
+                        <CarouselPrevious className="hidden sm:flex -left-12" />
+                        <CarouselNext className="hidden sm:flex -right-12" />
                     </Carousel>
                 </div>
             </section>
@@ -92,14 +91,14 @@ const HomePage = ({ setPage }: HomePageProps) => {
             <section id="download-app" className="bg-[#C4E9F2] bg-opacity-30 py-20">
                 <div className="container mx-auto px-6">
                     <div className="md:flex items-center">
-                        <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                        <div className="md:w-1/2 text-center mb-10 md:mb-0 md:ml-20">
                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3699D2] mb-4">
                                 Leve o Pet+ com você!
                             </h2>
                             <p className="text-base sm:text-lg text-gray-700 mb-8">
                                 Baixe nosso aplicativo e tenha acesso a todos os recursos na palma da sua mão. Disponível para iOS e Android.
                             </p>
-                            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                            <div className="flex flex-col sm:flex-col justify-center  gap-4">
                                 <AppleStore />
                                 <PlayStore />
                             </div>
