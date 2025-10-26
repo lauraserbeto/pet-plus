@@ -103,52 +103,31 @@ Os testes de usabilidade do protótipo mostraram **aceitação de mais de 80%** 
 
 ## 🧭 Guia de Execução
 
-* Clone o repositório e execute localmente:
+Este projeto utiliza Next.js, que gerencia tanto o frontend quanto o backend (API) de forma integrada.
 
+### Pré-requisitos
+* [Node.js](https://nodejs.org/) (versão 18 ou superior)
+* [Git](https://git-scm.com/)
+* Um gerenciador de pacotes (npm ou yarn)
+  
+### 1. Clonando o Repositório
 ```bash
 # Clone o projeto
-git clone https://github.com/lauraserbeto/pet-plus.git
+git clone [https://github.com/lauraserbeto/pet-plus.git](https://github.com/lauraserbeto/pet-plus.git)
 
 # Acesse a pasta
 cd pet-plus
-
-# Instale as dependências
-npm install
-
-# Rode o servidor local
-npm run dev
 ```
 
-* Configurando o Backend (API)
-
+### 2. Instalação e Execução
 ```bash
-# Navegue até a pasta do backend (ex: /backend)
-cd backend
-
-# Instale as dependências
-npm install
-
-# (Opcional) Crie um arquivo .env para variáveis de ambiente
-# Ex: PORTA=3001, DATABASE_URL=...
-
-# Inicie o servidor backend
-npm run dev
-```
-
-* Configurando o Frontend (Web)
-
-```bash
-# Em um NOVO terminal, navegue até a pasta do frontend (ex: /frontend)
-cd frontend
-
-# Instale as dependências
+# Instale todas as dependências (frontend e backend)
 npm install
 
 # (Opcional) Crie um arquivo .env.local para variáveis de ambiente
-# Você precisará apontar para a URL da sua API local
-# Ex: NEXT_PUBLIC_API_URL=http://localhost:3001
+# Ex: DATABASE_URL=...
 
-# Inicie o servidor frontend
+# Rode o servidor de desenvolvimento
 npm run dev
 ```
 
