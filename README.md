@@ -86,7 +86,6 @@ Os testes de usabilidade do protótipo mostraram **aceitação de mais de 80%** 
 
 - 📄 **Landing Page:** [https://pet-plus-rouge.vercel.app/](https://pet-plus-rouge.vercel.app/)  
 - 🎨 **Protótipo no Figma:** [Pet+ no Figma](https://www.figma.com/proto/G8qbsW8zYlq9DCMgZM5Exj/Pet-?node-id=0-1&t=ZP69Waamw28XIBhT-1)  
-- 💾 **Repositório GitHub:** [github.com/lauraserbeto/pet-plus](https://github.com/lauraserbeto/pet-plus)
 
 ---
 
