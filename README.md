@@ -104,7 +104,7 @@ Os testes de usabilidade do protótipo mostraram **aceitação de mais de 80%** 
 
 ## 🧭 Guia de Execução
 
-Clone o repositório e execute localmente:
+* Clone o repositório e execute localmente:
 
 ```bash
 # Clone o projeto
@@ -118,3 +118,43 @@ npm install
 
 # Rode o servidor local
 npm run dev
+```
+
+* Configurando o Backend (API)
+
+```bash
+# Navegue até a pasta do backend (ex: /backend)
+cd backend
+
+# Instale as dependências
+npm install
+
+# (Opcional) Crie um arquivo .env para variáveis de ambiente
+# Ex: PORTA=3001, DATABASE_URL=...
+
+# Inicie o servidor backend
+npm run dev
+```
+
+* Configurando o Frontend (Web)
+
+```bash
+# Em um NOVO terminal, navegue até a pasta do frontend (ex: /frontend)
+cd frontend
+
+# Instale as dependências
+npm install
+
+# (Opcional) Crie um arquivo .env.local para variáveis de ambiente
+# Você precisará apontar para a URL da sua API local
+# Ex: NEXT_PUBLIC_API_URL=http://localhost:3001
+
+# Inicie o servidor frontend
+npm run dev
+```
+
+---
+
+## 🐕 Conclusão
+<p>O Pet+ representa um ecossistema digital completo para o setor pet, unindo conveniência, tecnologia e propósito.
+Mais do que uma aplicação, o projeto busca conectar pessoas e negócios em torno do cuidado e bem-estar animal. 💛</p>
